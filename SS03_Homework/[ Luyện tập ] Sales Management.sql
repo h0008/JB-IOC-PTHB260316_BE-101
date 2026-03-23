@@ -20,3 +20,5 @@ CREATE TABLE sales.OrderDetails (
     product_id INT REFERENCES sales.Products (product_id),
     quantity INT NOT NULL
 );
+-- 5 - Delete the "OrderDetails" table from the "sales" schema.
+DROP TABLE sales.OrderDetails;

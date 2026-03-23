@@ -19,3 +19,9 @@ CREATE TABLE library.Members (
     email TEXT NOT NULL UNIQUE,
     join_date DATE DEFAULT CURRENT_DATE
 );
+-- 5 - Add a new column named "genre" of type VARCHAR to the "Books" table.
+ALTER TABLE library.Books ADD COLUMN genre VARCHAR(50);
+-- 6 - Rename available column to is_available in the "Books" table.
+ALTER TABLE library.Books RENAME COLUMN available TO is_available;
+-- 7 - Delete the "email" column from the "Members" table.
+ALTER TABLE library.Members DROP COLUMN email;
