@@ -13,7 +13,7 @@ CREATE TABLE school.Students (
 -- 4 - Create a table named "Courses" in the "school" schema with the following columns:
 CREATE TABLE school.Courses (
     course_id SERIAL PRIMARY KEY,
-    course_name VARCHAR(100) NOT NULL,
+    course_name VARCHAR(150) NOT NULL UNIQUE,
     credits INT NOT NULL
 );
 -- 5 - Create a table named "Enrollments" in the "school" schema with the following columns:
