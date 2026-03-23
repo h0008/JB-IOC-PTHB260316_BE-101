@@ -14,7 +14,7 @@ CREATE TABLE company.Employees (
     employee_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     dob DATE NOT NULL,
-    department_id INT REFERENCES company.Departments(department_id
+    department_id INT REFERENCES company.Departments(department_id)
 );
 -- 5 - Create a table named "Projects" in the "company" schema with the following columns:
 CREATE TABLE company.Projects (
@@ -28,4 +28,3 @@ CREATE TABLE company.EmployeeProjects (
     emp_id SERIAL PRIMARY KEY,
     project_id INT REFERENCES company.Projects(project_id)
 );
-
