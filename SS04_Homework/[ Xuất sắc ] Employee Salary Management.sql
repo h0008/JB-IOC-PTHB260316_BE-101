@@ -12,7 +12,7 @@ CREATE TABLE Employees (
                            bonus int,
                            join_year char(4) NOT NULL
 );
--- 4 - Insert at least 7 records into the "Employees" table
+
 INSERT INTO Employees (id, full_name, department, position, salary, bonus, join_year) VALUES
                                                                                           (1, 'Nguyễn Văn Huy', 'IT', 'Developer', 18000000, 1000000, 2021),
                                                                                           (2, 'Trần Thị Mai', 'HR', 'Recruiter', 12000000, NULL, 2020),
